@@ -1,0 +1,323 @@
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:300,500|Open+Sans:300,600);
+.snipcart {
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color:#313332
+} */
+
+@font-face {
+  font-family: "Gauthier";
+  font-style: normal;
+  font-weight: 300;
+  src: url(gauthier.woff2) format("woff2");
+}
+
+.snipcart {
+  font-family: Gauthier;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.snipcart-base-button__label {
+  flex-grow: 1;
+  padding: 0 16px;
+  font-family: "Gauthier";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.snipcart-button-link {
+  display: inline-block;
+  font-family: "Gauthier";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.snipcart__font--secondary,
+.snipcart__font--subtitle {
+  font-family: "Gauthier";
+}
+
+.snipcart__box--gray {
+  background-color: hsl(36.7, 17%, 80%);
+}
+
+/* Transparent webkit autofill background */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+/* hide discount box in cart */
+
+.snipcart-cart__discount-box {
+display: none;
+
+}
+
+
+.snipcart-payment-methods-list-item__button {
+  flex-grow: 1;
+  padding: 16px;
+  font-family: "Gauthier";
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 4px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+/* Making sure the VOP line does not break */
+
+.snipcart-form__label {
+  display: flex;
+  white-space: nowrap;
+}
+
+/* Border radius for input boxes */
+
+.snipcart-input {
+  border-radius: 4px;
+}
+
+.snipcart-form__select {
+  border-radius: 4px;
+}
+
+.snipcart-discount-box__button {
+  border-radius: 4px;
+}
+
+.snipcart-item-quantity__quantity {
+  border-radius: 4px;
+}
+
+.snipcart-shipping-rates-list-item--highlight {
+  border-radius: 4px;
+}
+
+/* NEW RELEASE */
+
+.snipcart__box--badge {
+  border: 1px solid;
+}
+
+.snipcart__box--badge-highlight {
+border-color: transparent !important;
+}
+
+.snipcart-payment-methods-list-item__icon {
+  display: none;
+}
+
+.snipcart-modal__close-title {
+  font-family: "Gauthier";
+}
+
+
+.privacypolicynotice {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  padding-right: 1vw;
+  padding-bottom: 2vh;
+  padding-left: 1vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.privacypolicynoticep {
+  margin-bottom: 1vh;
+}
+
+.privacypolicylink {
+  text-decoration: underline;
+}
+
+
+#snipcart {
+  /* ----------------- 
+      Colors
+  ----------------- */
+  --color-default: hsl(0, 0%, 0%);
+  --color-alt: hsl(0, 0%, 0%);
+  --color-icon: hsl(0, 0%, 0%);
+  --color-success: hsl(144, 74%, 37%);
+  --color-error: hsl(6, 64%, 47%);
+
+  --color-link: hsl(0, 0%, 0%);
+  --color-link-hover: hsl(0, 0%, 0%);
+  --color-link-active: var(--color-link);
+  --color-link-focus: var(--color-link);
+
+  --color-input: var(--color-default);
+  --color-input-hover: var(--color-input);
+  --color-input-focus: var(--color-input);
+  --color-input-checked: var(--color-input);
+  --color-input-disabled: var(--color-alt);
+  --color-input-error: var(--color-error);
+  --color-inputLabel: var(--color-default);
+  --color-inputLabel-hover: var(--color-inputLabel);
+  --color-inputLabel-focus: var(--color-inputLabel);
+  --color-inputIcon: var(--color-alt);
+  --color-inputIcon-hover: var(--color-default);
+  --color-inputIcon-focus: var(--color-inputIcon);
+  --color-inputIcon-checked: var(--color-default);
+  --color-inputIcon-error: var(--color-error);
+  --color-inputPlaceholder: var(--color-alt);
+
+  --color-buttonPrimary: hsl(0, 0%, 100%);
+  --color-buttonPrimary-hover: hsl(0, 0%, 100%);
+  --color-buttonPrimary-active: hsl(0, 0%, 100%);
+  --color-buttonPrimary-focus: hsl(0, 0%, 100%);
+  --color-buttonPrimary-disabled: hsl(0, 0%, 100%);
+  --color-buttonPrimary-success: hsl(0, 0%, 100%);
+  --color-buttonPrimary-error: hsl(0, 0%, 100%);
+
+  --color-buttonSecondary: hsl(0, 0%, 100%);
+  --color-buttonSecondary-hover: hsl(0, 0%, 100%);
+  --color-buttonSecondary-active: var(--color-buttonSecondary);
+  --color-buttonSecondary-focus: var(--color-buttonSecondary);
+  --color-buttonSecondary-disabled: hsl(210, 10%, 25%);
+  --color-buttonSecondary-success: hsl(0, 0%, 100%);
+  --color-buttonSecondary-error: hsl(0, 0%, 100%);
+
+  --color-buttonDanger: hsl(0, 0%, 100%);
+  --color-buttonDanger-hover: hsl(6, 58%, 60%);
+  --color-buttonDanger-active: var(--color-buttonDanger);
+  --color-buttonDanger-focus: var(--color-buttonDanger);
+  --color-buttonDanger-disabled: hsl(210, 10%, 25%);
+  --color-buttonDanger-success: var(--color-default);
+  --color-buttonDanger-error: var(--color-default);
+
+  --color-badge: hsl(0, 0%, 0%);
+  --color-badge-active: hsl(0, 0%, 100%);
+  --color-badge-disabled: var(--color-alt);
+
+  /* ----------------- 
+      Border colors
+  ----------------- */
+  --borderColor-default: rgba(255, 255, 255, 0);
+  --borderColor-error:  hsl(6, 64%, 47%);
+
+  --borderColor-link: currentColor;
+  --borderColor-link-hover: currentColor;
+  --borderColor-link-active: currentColor;
+  --borderColor-link-focus: currentColor;
+
+  --borderColor-input: rgb(201, 201, 201);
+  --borderColor-input-hover: hsl(0, 0%, 0%);
+  --borderColor-input-focus: var(--borderColor-input-hover);
+  --borderColor-input-checked: var(--borderColor-input-hover);
+  --borderColor-input-disabled: hsl(210, 10%, 20%);
+  --borderColor-input-error: var(--borderColor-error);
+
+  --borderColor-buttonPrimary: transparent;
+  --borderColor-buttonPrimary-hover: transparent;
+  --borderColor-buttonPrimary-focus: transparent;
+  --borderColor-buttonPrimary-disabled: transparent;
+  --borderColor-buttonPrimary-success: transparent;
+  --borderColor-buttonPrimary-error: transparent;
+
+  --borderColor-buttonSecondary: hsl(0, 0%, 0%);
+  --borderColor-buttonSecondary-hover: hsl(0, 0%, 0%);
+  --borderColor-buttonSecondary-focus: transparent;
+  --borderColor-buttonSecondary-disabled: transparent;
+  --borderColor-buttonSecondary-success: transparent;
+  --borderColor-buttonSecondary-error: transparent;
+
+  --borderColor-badge: hsl(0, 0%, 100%);
+  --borderColor-badge-active: hsl(0, 0%, 0%);
+  --borderColor-badge-disabled: hsl(0, 0%, 0%);
+
+  /* ----------------- 
+      Background colors
+  ----------------- */
+  --bgColor-default: hsl(0, 0%, 100%);
+  --bgColor-alt: hsl(0, 0%, 100%);
+  --bgColor-success: hsl(144, 70%, 15%);
+  --bgColor-error: hsl(6, 50%, 15%);
+  --bgColor-info: hsl(0, 0%, 0%);
+
+  --bgColor-modal: hsl(37, 17%, 76%);
+  --bgColor-modalVeil: hsl(37, 17%, 76%);
+
+  --bgColor-link: none;
+  --bgColor-link-hover: none;
+  --bgColor-link-active: none;
+  --bgColor-link-focus: hsl(0, 0%, 0%);
+
+  --bgColor-input: hsl(0, 0%, 100%);
+  --bgColor-input-hover: hsl(0, 0%, 100%);
+  --bgColor-input-focus: hsl(0, 0%, 100%);
+  --bgColor-input-checked: hsl(0, 0%, 0%);
+  --bgColor-input-disabled: hsl(0, 0%, 19%);
+  --bgColor-input-error: hsl(0, 69%, 43%);
+  --bgColor-input-autofill: hsl(0, 0%, 95%);
+
+  --bgColor-buttonPrimary: hsl(0, 0%, 0%);
+  --bgColor-buttonPrimary-hover: hsl(0, 0%, 0%);
+  --bgColor-buttonPrimary-active: hsl(0, 0%, 0%);
+  --bgColor-buttonPrimary-focus: hsl(0, 0%, 0%);
+  --bgColor-buttonPrimary-disabled: hsl(0, 0%, 0%);
+  --bgColor-buttonPrimary-success: hsl(144, 66%, 30%);
+  --bgColor-buttonPrimary-error: hsl(6, 60%, 35%);
+
+  --bgColor-buttonSecondary: hsl(0, 0%, 0%);
+  --bgColor-buttonSecondary-hover: hsl(0, 0%, 0%);
+  --bgColor-buttonSecondary-active: hsl(0, 0%, 0%);
+  --bgColor-buttonSecondary-focus: hsl(0, 0%, 0%);
+  --bgColor-buttonSecondary-disabled: hsl(0, 0%, 25%);
+  --bgColor-buttonSecondary-success: var(--bgColor-success);
+  --bgColor-buttonSecondary-error: var(--bgColor-error);
+
+  --bgColor-buttonDanger: hsl(0, 0%, 0%);
+  --bgColor-buttonDanger-hover: hsl(0, 0%, 0%);
+  --bgColor-buttonDanger-active: hsl(0, 0%, 0%);
+  --bgColor-buttonDanger-focus: hsl(0, 0%, 0%);
+  --bgColor-buttonDanger-disabled: hsl(0, 0%, 0%);
+  --bgColor-buttonDanger-success: hsl(144, 66%, 30%);
+  --bgColor-buttonDanger-error: hsl(6, 60%, 35%);
+
+  --bgColor-badge: hsl(36.7, 17%, 80%);
+  --bgColor-badge-active: hsl(0, 0%, 0%);
+  --bgColor-badge-disabled: hsl(36.7, 17%, 80%);
+
+  /* ----------------- 
+      Shadows
+  ----------------- */
+
+  --shadow-default: 0px 20px 24px -20px hsla(0, 0%, 0%, 0.5);
+  --shadow-tooltip: 0px 8px 16px hsla(216, 2%, 40%, 0.5);
+
+  --shadow-link-focus: 0px 6px 4px -3px hsla(0, 0%, 65%, 0.5);
+
+  --shadow-input-hover: none;
+  --shadow-input-focus: 0px 5px 10px -3px hsla(0, 0%, 71%, 0.3);
+  --shadow-input-checked: none;
+
+  --shadow-buttonPrimary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, 0.5);
+  --shadow-buttonPrimary-active: none;
+  --shadow-buttonPrimary-focus: 0px 0px 6px 2px hsl(0, 0%, 75%);
+
+  --shadow-buttonSecondary-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, 0.2);
+  --shadow-buttonSecondary-active: none;
+  --shadow-buttonSecondary-focus: 0px 0px 6px 2px hsla(0, 0%, 73%, 0.8);
+
+  --shadow-buttonDanger-hover: 0px 10px 4px -8px hsla(0, 0%, 0%, 0.25);
+  --shadow-buttonDanger-active: none;
+  --shadow-buttonDanger-focus: 0px 0px 6px 2px hsla(6, 55%, 60%);
+}
